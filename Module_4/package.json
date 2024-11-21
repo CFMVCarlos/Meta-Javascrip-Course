@@ -1,0 +1,16 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "scripts": {
+    "test01": "jest 01_addFive.test.js",
+    "test02": "jest 02_timesTwo.test.js",
+    "test03": "jest 03_statusOfKeys.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

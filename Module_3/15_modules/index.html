@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 modules script</title>
+  </head>
+  <body>
+    JS scripts as modules.
+    
+    <!-- First Script Block -->
+    <script type="module">
+      import { informalGreeting } from "./greeting.js";  // Importing a specific function
+      informalGreeting("Jane");  // Using the imported function
+    </script>
+
+    <!-- Second Script Block -->
+    <script type="module">
+      import { informalGreeting, formalGreeting } from "./greeting.js"; // Importing multiple functions
+      import greeting from "./greeting.js"; // Importing the default function
+      formalGreeting("John");  // Using the formalGreeting function
+      greeting();  // Using the default greeting function
+    </script>
+  </body>
+</html>
